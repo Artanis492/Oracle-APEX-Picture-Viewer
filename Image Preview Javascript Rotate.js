@@ -72,8 +72,8 @@ jQuery.fn.rotate = function(angle,whence) {
 		   e.preventDefault();
            savedImage.on('wheel', function(e){
             if (e.originalEvent.deltaY < 0) {
-				if ($('#imagePreview').css("transform") && $('#imagePreview').css("transform") !== "none") {
-				var scale = $('#imagePreview').css("transform").split(',')[3].trim();
+				if ($('THIS WOULD BE THE JQUERY SELECTOR OF THE HTML ELEMENT FOR THE PICTURE').css("transform") && $('#imagePreview').css("transform") !== "none") {
+				var scale = $('THIS WOULD BE THE JQUERY SELECTOR OF THE HTML ELEMENT FOR THE PICTURE').css("transform").split(',')[3].trim();
 				var iNum = parseInt(scale)+1;
 				}
 				else { var iNum = 2}
@@ -87,8 +87,8 @@ jQuery.fn.rotate = function(angle,whence) {
 		   e.stopPropagation();
 		   e.preventDefault();
             if (e.originalEvent.deltaY  >0) {
-				if ($('#imagePreview').css("transform") && $('#imagePreview').css("transform") !== "none") {
-				var scale = $('#imagePreview').css("transform").split(',')[3].trim();
+				if ($('THIS WOULD BE THE JQUERY SELECTOR OF THE HTML ELEMENT FOR THE PICTURE').css("transform") && $('THIS WOULD BE THE JQUERY SELECTOR OF THE HTML ELEMENT FOR THE PICTURE').css("transform") !== "none") {
+				var scale = $('THIS WOULD BE THE JQUERY SELECTOR OF THE HTML ELEMENT FOR THE PICTURE').css("transform").split(',')[3].trim();
 				var iNum = parseInt(scale)-1;
 				}
 				else { var iNum = 1}
